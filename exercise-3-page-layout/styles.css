@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.text {
+    flex: 1.5;
+    text-align: left;
+    margin: 40px;
+}
+
+.image {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    max-width: 50%;
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: center;
+}
+
+.gallery img,
+.gallery video {
+    width: 48%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .gallery img,
+    .gallery video {
+        width: 100%;
+    }
+}
